@@ -1,7 +1,5 @@
 header {
     height: 60px;
-   
-
 }
 
 main {
@@ -15,6 +13,7 @@ aside {
     background-image: url(img/sidebar-bg.png);
 }
 
+
 .ms-color-yellow {
     color: #ff8f00;
 }
@@ -22,3 +21,11 @@ aside {
 #ms-bg-grey {
     background-color: #e5e5e5;
 }
+
+/* Media Query */
+
+@media screen and (min-width: 576px) { 
+
+
+
+ }

@@ -5,12 +5,14 @@ header {
 }
 
 main {
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 100%;
 }
 
 aside {
-    width: 100px;
+    min-width: 3rem;
+    background-color: #021e34;
+    background-image: url(img/sidebar-bg.png);
 }
 
 .ms-color-yellow {

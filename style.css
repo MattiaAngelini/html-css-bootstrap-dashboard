@@ -33,4 +33,9 @@ aside {
     aside {
         min-width: 8rem;
     }
+
+    .ms-new-student {
+        justify-content: end;
+    }
 }
+

@@ -1,6 +1,5 @@
-header {
-    height: 60px;
-}
+
+/* General */
 
 main {
     height: calc(100vh - 60px);
@@ -8,11 +7,12 @@ main {
 }
 
 aside {
-    min-width: 3rem;
+    min-width: 4rem;
     background-color: #021e34;
     background-image: url(img/sidebar-bg.png);
 }
 
+/* My colors */
 
 .ms-color-yellow {
     color: #ff8f00;
@@ -22,10 +22,10 @@ aside {
     background-color: #e5e5e5;
 }
 
-/* Media Query */
+/* Media queries */
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
     aside {
-        max-width: 90px;
+        min-width: 8rem;
     }
- }
+}

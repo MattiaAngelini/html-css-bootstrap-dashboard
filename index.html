@@ -13,183 +13,110 @@
 </head>
 <body>
 
-<!---------------------HEADER----------------------->
- 
+<!-------------- HEADER ---------------->
+
 <header class="">
-    
-        <div class="d-flex align-items-center">
-            <div class="mx-2" href="#">
-                <img class="d-none d-md-inline-block " src="./img/logo.svg" alt="">
-                <img class="d-md-none" src="./img/mobile-logo.png" alt="Bootstrap" width="40" height="40">
-            </div>
-
-            <form class="d-flex flex-grow-1" role="search">
-                <input id="ms-bg-grey" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                
-            </form>
-
-                
-            <i class="fa-solid fa-list d-none d-md-block mx-2"></i>
-            <i class="fa-solid fa-circle-question d-none d-md-block mx-2"></i>
-            <i class="fa-solid fa-ellipsis-vertical d-none d-md-block mx-2"></i>
-            
-
-            <div class="dropdown">
-                <i class="fa-solid fa-bell ms-color-yellow mx-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false">           
-                </i>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-
-
+    <div class="d-flex align-items-center">
+        <div class="mx-2" href="#">
+            <img class="d-none d-md-inline-block " src="./img/logo.svg" alt="">
+            <img class="d-md-none" src="./img/mobile-logo.png" alt="Bootstrap" width="40" height="40">
         </div>
+        <form class="d-flex flex-grow-1" role="search">
+            <input id="ms-bg-grey" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                
+        </form>
+        <i class="fa-solid fa-list d-none d-md-block mx-2"></i>
+        <i class="fa-solid fa-circle-question d-none d-md-block mx-2"></i>
+        <i class="fa-solid fa-ellipsis-vertical d-none d-md-block mx-2"></i>
+        <div class="dropdown">
+            <i class="fa-solid fa-bell ms-color-yellow mx-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
-   
-  </header>
+<!--------------- SIDE-BAR --------------->
 
-<!---------------------SIDE-BAR--------------------->
-
-    <div class="d-flex">
-    
-        <aside class="d-flex flex-column justify-content-between">
-            
-            <div class="d-flex flex-column align-items-center">
-                
-                <div class="d-flex align-items-center mt-4 m-2">
-                    <i class="fa-solid fa-house text-white m-1"></i>
-                    <div class="text-white d-none d-md-block m-1">Home</div>
-                </div>
-
-                <div class="d-flex align-items-center m-2">
-                    <i class="fa-solid fa-chart-simple text-white m-1"></i>
-                    <div class="text-white d-none d-md-block m-1">Stats</div>
-                </div>
-                
-                <div class="d-flex align-items-center m-2">
-                    <i class="fa-solid fa-signal text-white m-1"></i>
-                    <div class="text-white d-none d-md-block m-1">Signals</div>
-                </div>
-
+<div class="d-flex">
+    <aside class="d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column align-items-center">
+            <div class="d-flex align-items-center mt-4 m-2">
+                <i class="fa-solid fa-house text-white m-1"></i>
+                <div class="text-white d-none d-md-block m-1">Home</div>
             </div>
-            
-            <div class="d-flex align-items-center justify-content-center mb-4">
-                <i class="fa-solid fa-gear text-white m-1"></i>
+            <div class="d-flex align-items-center m-2">
+                <i class="fa-solid fa-chart-simple text-white m-1"></i>
+                <div class="text-white d-none d-md-block m-1">Stats</div>
+            </div>
+            <div class="d-flex align-items-center m-2">
+                <i class="fa-solid fa-signal text-white m-1"></i>
                 <div class="text-white d-none d-md-block m-1">Signals</div>
             </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center mb-4">
+            <i class="fa-solid fa-gear text-white m-1"></i>
+            <div class="text-white d-none d-md-block m-1">Signals</div>
+        </div>
+    </aside>
 
-        </aside>
+<!--------------- MAIN --------------->   
+    <main class="w-100">
+        <div class="ms-container ms-bg-lightblue text-white">
+            <section class="row">
 
-
-        <main class="w-100">
-
-            <div class="ms-container ms-bg-lightblue text-white">
-                
-                <section class="row">
-
-                    <div class="ms-new-student col-md-3 d-flex  py-3 order-md-3">
-                        <h4>Nuovo studente</h4>
+    
+                <div class="ms-new-student col-md-3 d-flex align-items-center py-3 order-md-3">
                     
-                        <div class="d-flex">
-                            <div class="mx-3 py-1">
+                    <span class="">Nuovo studente</span>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        
+                        <div>
+                            <div class="mx-3 d-flex">
                                 <span class="border rounded px-2 pb-1">+</span>
                             </div>
                         </div>
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">...</div>
                     </div>
+                </div>
 
-                    <div class="col-md-3 py-3">
-                        <div>
+
+                <div class="col-md-3 py-3">
+                    <div>
                         <span>Boolean</span>
                         <span>Piano Blaze</span>
-                        </div>                
-
-                        <span>3 app</span>
-                        <i>-></i>
-                        <span><i>+</i></span>    
-                        <div class="d-flex d-none d-xl-block">
-                            <span>Boolean mobile app</span>
-                            <span>Boolean Web app</span>
-                            <span>Boolean blog app</span>
-                        </div>            
                     </div>
+                    <span>3 app</span>
+                    <i>-></i>
+                    <span><i>+</i></span>    
+                    <div class="d-flex d-none d-xl-block">
+                        <span>Boolean mobile app</span>
+                        <span>Boolean Web app</span>
+                        <span>Boolean blog app</span>
+                    </div>            
+                </div>
+                <div class="col-md-6 py-3">
+                    <span>Studenti online negli ultimi 30 minuti</span>
+                    <div>125</div>
+                </div>
+            </section>
+            <section>
+                <!-- Your Lorem Ipsum content here -->
+            </section>
+        </div>
+    </main>
+</div>
 
-
-                    <div class="col-md-6 py-3">
-                        <h4>Studenti online negli ultimi 30 minuti</h4>
-                        <div>125</div>
-                    </div>
-
-                </section>
-
-                <section>
-
-
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ab aliquam modi pariatur aspernatur porro. Aut tenetur impedit ab at, consectetur praesentium voluptate voluptatem, in possimus pariatur excepturi reiciendis assumenda.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur provident magnam consectetur blanditiis exercitationem quod harum, laboriosam accusantium! Quo illum voluptatem cum ex repellendus dolorum necessitatibus vero dignissimos dolorem et.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, impedit error ab ipsam eos harum rem cupiditate eum quos cum ad. Exercitationem vitae nulla accusamus quo illo ullam dolorem maxime?
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur natus ad iure! Asperiores, velit obcaecati? Atque inventore quia ipsam quos, itaque corporis cumque neque reprehenderit esse obcaecati illum autem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequatur nobis. Mollitia corrupti iste perspiciatis voluptate. Quia, aperiam nihil quas dolore dolorem officiis saepe cupiditate tenetur veniam hic. Voluptates, numquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo magni delectus voluptatem illum, unde labore numquam eum illo qui totam voluptas odit velit consequatur quae ex accusantium enim corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi omnis quod perspiciatis praesentium similique, quae dolorum eos voluptatibus nam consequuntur natus temporibus possimus reiciendis asperiores ipsa, voluptates error amet?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet voluptatum, nemo blanditiis omnis cumque, ab aliquid iste error illo repellendus minus, officia maxime. Fugit earum quasi qui obcaecati sed!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur fuga, odit quod ipsam quis, quas voluptas ipsa voluptatibus animi vitae eum dolor illo culpa mollitia, unde soluta ad amet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique soluta possimus deserunt temporibus voluptatum pariatur minus ex sunt sequi, nobis unde dolores, aspernatur autem omnis, blanditiis dolore veniam nemo!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam provident veniam possimus voluptatem ab facilis dicta tenetur velit saepe, iste tempore aut cupiditate laborum accusantium maiores quibusdam ut. A, velit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio deleniti rerum sed rem dicta optio a porro velit. Laborum repudiandae illum, eligendi magnam et assumenda consequuntur dolorum reiciendis quisquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus consequuntur nemo earum quisquam quibusdam minus eum illo nostrum voluptatem. Eos quis corporis pariatur ducimus, earum magnam reprehenderit! Harum, quaerat.
-                    m ipsum dolor sit amet consectetur adipisicing elit. Et, consequatur nobis. Mollitia corrupti iste perspiciatis voluptate. Quia, aperiam nihil quas dolore dolorem officiis saepe cupiditate tenetur veniam hic. Voluptates, numquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo magni delectus voluptatem illum, unde labore numquam eum illo qui totam voluptas odit velit consequatur quae ex accusantium enim corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi omnis quod perspiciatis praesentium similique, quae dolorum eos voluptatibus nam consequuntur natus temporibus possimus reiciendis asperiores ipsa, voluptates error amet?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet voluptatum, nemo blanditiis omnis cumque, ab aliquid iste error illo repellendus minus, officia maxime. Fugit earum quasi qui obcaecati sed!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur fuga, odit quod ipsam quis, quas voluptas ipsa voluptatibus animi vitae eum dolor illo culpa mollitia, unde soluta ad amet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique soluta possimus deserunt temporibus voluptatum pariatur minus ex sunt sequi, nobis unde dolores, aspernatur autem omnis, blanditiis dolore veniam nemo!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam provident veniam possimus voluptatem ab facilis dicta tenetur velit saepe, iste tempore aut cupiditate laborum accusantium maiores quibusdam ut. A, velit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio deleniti rerum sed rem dicta optio a porro velit. Laborum repudiandae illum, eligendi magnam et assumenda consequuntur dolorum reiciendis quisquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus consequuntur nemo earum quisquam quibusdam minus eum illo nostrum voluptatem. Eos quis corporis pariatur ducimus, earum magnam reprehenderit! Harum, quaerat.
-                    
-                    m ipsum dolor sit amet consectetur adipisicing elit. Et, consequatur nobis. Mollitia corrupti iste perspiciatis voluptate. Quia, aperiam nihil quas dolore dolorem officiis saepe cupiditate tenetur veniam hic. Voluptates, numquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo magni delectus voluptatem illum, unde labore numquam eum illo qui totam voluptas odit velit consequatur quae ex accusantium enim corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi omnis quod perspiciatis praesentium similique, quae dolorum eos voluptatibus nam consequuntur natus temporibus possimus reiciendis asperiores ipsa, voluptates error amet?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet voluptatum, nemo blanditiis omnis cumque, ab aliquid iste error illo repellendus minus, officia maxime. Fugit earum quasi qui obcaecati sed!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur fuga, odit quod ipsam quis, quas voluptas ipsa voluptatibus animi vitae eum dolor illo culpa mollitia, unde soluta ad amet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique soluta possimus deserunt temporibus voluptatum pariatur minus ex sunt sequi, nobis unde dolores, aspernatur autem omnis, blanditiis dolore veniam nemo!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam provident veniam possimus voluptatem ab facilis dicta tenetur velit saepe, iste tempore aut cupiditate laborum accusantium maiores quibusdam ut. A, velit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio deleniti rerum sed rem dicta optio a porro velit. Laborum repudiandae illum, eligendi magnam et assumenda consequuntur dolorum reiciendis quisquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus consequuntur nemo earum quisquam quibusdam minus eum illo nostrum voluptatem. Eos quis corporis pariatur ducimus, earum magnam reprehenderit! Harum, quaerat.
-                    
-                    m ipsum dolor sit amet consectetur adipisicing elit. Et, consequatur nobis. Mollitia corrupti iste perspiciatis voluptate. Quia, aperiam nihil quas dolore dolorem officiis saepe cupiditate tenetur veniam hic. Voluptates, numquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo magni delectus voluptatem illum, unde labore numquam eum illo qui totam voluptas odit velit consequatur quae ex accusantium enim corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi omnis quod perspiciatis praesentium similique, quae dolorum eos voluptatibus nam consequuntur natus temporibus possimus reiciendis asperiores ipsa, voluptates error amet?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet voluptatum, nemo blanditiis omnis cumque, ab aliquid iste error illo repellendus minus, officia maxime. Fugit earum quasi qui obcaecati sed!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur fuga, odit quod ipsam quis, quas voluptas ipsa voluptatibus animi vitae eum dolor illo culpa mollitia, unde soluta ad amet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique soluta possimus deserunt temporibus voluptatum pariatur minus ex sunt sequi, nobis unde dolores, aspernatur autem omnis, blanditiis dolore veniam nemo!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam provident veniam possimus voluptatem ab facilis dicta tenetur velit saepe, iste tempore aut cupiditate laborum accusantium maiores quibusdam ut. A, velit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio deleniti rerum sed rem dicta optio a porro velit. Laborum repudiandae illum, eligendi magnam et assumenda consequuntur dolorum reiciendis quisquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus consequuntur nemo earum quisquam quibusdam minus eum illo nostrum voluptatem. Eos quis corporis pariatur ducimus, earum magnam reprehenderit! Harum, quaerat.
-                    
-                    m ipsum dolor sit amet consectetur adipisicing elit. Et, consequatur nobis. Mollitia corrupti iste perspiciatis voluptate. Quia, aperiam nihil quas dolore dolorem officiis saepe cupiditate tenetur veniam hic. Voluptates, numquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo magni delectus voluptatem illum, unde labore numquam eum illo qui totam voluptas odit velit consequatur quae ex accusantium enim corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi omnis quod perspiciatis praesentium similique, quae dolorum eos voluptatibus nam consequuntur natus temporibus possimus reiciendis asperiores ipsa, voluptates error amet?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet voluptatum, nemo blanditiis omnis cumque, ab aliquid iste error illo repellendus minus, officia maxime. Fugit earum quasi qui obcaecati sed!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur fuga, odit quod ipsam quis, quas voluptas ipsa voluptatibus animi vitae eum dolor illo culpa mollitia, unde soluta ad amet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique soluta possimus deserunt temporibus voluptatum pariatur minus ex sunt sequi, nobis unde dolores, aspernatur autem omnis, blanditiis dolore veniam nemo!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam provident veniam possimus voluptatem ab facilis dicta tenetur velit saepe, iste tempore aut cupiditate laborum accusantium maiores quibusdam ut. A, velit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio deleniti rerum sed rem dicta optio a porro velit. Laborum repudiandae illum, eligendi magnam et assumenda consequuntur dolorum reiciendis quisquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus consequuntur nemo earum quisquam quibusdam minus eum illo nostrum voluptatem. Eos quis corporis pariatur ducimus, earum magnam reprehenderit! Harum, quaerat.
-                    
-                    v
-                </section>
-
-            </div>
- 
-        </main>
-    
-    </div>
-
-
-    <!-- Bootstrap Script Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Bootstrap Script Js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

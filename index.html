@@ -65,64 +65,50 @@
 <!--------------- MAIN --------------->   
     <main class="w-100">
         <div class="ms-container ms-bg-lightblue text-white">
+           
+            <!--SECTION NEW STUDENT-->
             <section class="row">
-
-    
                 <div class="ms-new-student col-sm-3 d-flex align-items-center py-3 order-sm-3">
-                         
                     <h5 class="">Nuovo studente</h5>
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        
                         <div>
                             <div class="mx-3 d-flex">
                                 <span class="border rounded px-2 pb-1">+</span>
                             </div>
                         </div>
                     </button>
-                    
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-
                         <!-- + New Student-->
                         <div class="offcanvas-body">
-
-                            
                             <div class="container">
                                 <div class="py-3">Inserisci un nuovo studente</div>
                                 <div class="row">
-                                     
                                     <div class="col-6">Nome
                                         <input class="form-control " type="text" " aria-label="default input example">
                                     </div>
-
                                     <div class="col-6">Cognome
                                         <input class="form-control " type="text"  aria-label="default input example">
                                     </div>
-
                                     <div class="col-6">E-mail
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1">@</span>
                                             <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
-                                          </div>
+                                        </div>
                                     </div>
-
                                     <div class="col-6">Password
                                         <input class="form-control " type="text"  aria-label="default input example">
                                     </div>
-
                                     <div class="col-12">Indirizzo
                                         <input class="form-control " type="text"  aria-label="default input example">
                                     </div>
-
                                     <div class=""></div>
-
                                     <div class="col-5">Città
                                         <input class="form-control " type="text"  aria-label="default input example">
                                     </div>
-   
                                     <div class="col-4"> Stato
                                         <div class="input-group">
                                             <select class="form-select" id="inputGroupSelect04">
@@ -133,11 +119,9 @@
                                             </select>
                                         </div>
                                     </div>
-    
                                     <div class="col-3">Cap
                                         <input class="form-control " type="text"  aria-label="default input example">
                                     </div>
-
                                     <div class="col-12"> Foto
                                         <div class="input-group mb-3">
                                             <label class="input-group-text" for="inputGroupSelect01">Scegli file</label>
@@ -149,43 +133,31 @@
                                             </select>
                                         </div>                                     
                                     </div>
-
                                     <div>
-
                                         <form action="/azione_del_form" method="post">
                                             <input type="checkbox" id="checkbox" name="checkbox" required>
                                             <label for="checkbox">Seleziona per proseguire</label>
-
                                         </form>
-                                        
                                         <div class="py-2">
-                                        <button type="button" class="btn btn-primary">Primary</button>
-                                        <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col-sm-4 py-3">
                     <div class="d-flex align-items-center">
                         <h3 class="">Boolean</h3>
                         <span class="ms-bg-blue badge">Piano Blaze</span>
                     </div>
-                    
                     <div class="d-flex align-items-center">
-                    <span class="ms-bg-blue badge p-1">3 app</span>
-                    <span>>></span>
-                    <span class="ms-bg-blue badge p-1">+</span>  
-                   </div>
-
+                        <span class="ms-bg-blue badge p-1">3 app</span>
+                        <span>>></span>
+                        <span class="ms-bg-blue badge p-1">+</span>  
+                    </div>
                     <div class="d-flex d-none d-xl-block">
                         <span class="ms-bg-blue badge p-1" >Boolean mobile app</span>
                         <span class="ms-bg-blue badge p-1">Boolean Web app</span>
@@ -196,9 +168,223 @@
                     <span>Studenti online negli ultimi 30 minuti</span>
                     <h3>125</h3>
                 </div>
-            </section>
-            
+            </section>          
         </div>
+
+        <!--SECTION T-->
+
+        <section class="container p-0 mt-3 border">
+            <div class="border ms-bg-lightgrey">
+                <h4 class="py-2 ps-1 ">Prossime classi</h4>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover table-nowrap">
+                    <thead class="thead-light">
+                        <tr>
+                            <td scope="col" class="w-50">Nome</td>
+                            <td scope="col" class="d-none d-md-table-cell text-center">Data inizio</td>
+                            <td scope="col" class="d-none d-md-table-cell text-center">ROI</td>
+                            <td scope="col" class="text-center">Stato</td>
+                            <td scope="col" class="text-center">Azioni</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- row 1  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="/img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 75</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">15 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge text-bg-success">Done</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 2  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 75</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">16 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge text-bg-success">Done</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 3  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg"  width="40" height="40">
+                                </div>
+                                <span>Classe 77</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">17 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge bg-warning">Process</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 4  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 78</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">18 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge text-bg-success">Done</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 5  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 79</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">19 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge bg-danger">Failed</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 6  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 80</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">20 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge text-bg-success">Done</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 7  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 81</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">21 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge bg-danger">Failed</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- row 8  -->
+                        <tr>
+                            <td scope="row" class="d-flex align-items-center gap-2">
+                                <div class="d-inline-block ms-table-logo-xs">
+                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                </div>
+                                <span>Classe 82</span>
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">22 Feb 2021</td>
+                            <td class="d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center">
+                                <span class="badge text-bg-success">Done</span>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 </div>
 

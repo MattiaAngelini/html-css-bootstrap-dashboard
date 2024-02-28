@@ -1,16 +1,15 @@
 
 /* General Layout */
 
-header {
-    
+header {  
     height: 2.5rem;
     margin: 1.25rem 0 1.25rem 0;  
 }
 
-main {
-  
+main { 
     height:calc(100vh - 5rem);
-    overflow-y: auto;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 aside {
@@ -18,9 +17,7 @@ aside {
     min-width: 4rem;
     background-color: #021e34;
     background-image: url(img/sidebar-bg.png);
-
 }
-
 
 /* My colors */
 
@@ -35,6 +32,20 @@ aside {
 .ms-bg-blue {
     background-color: #165bba;
 }
+
+.ms-bg-lightgrey {
+    background-color: #f7f7f7;
+}
+
+.ms-bg-white {
+    background-color: white;
+}
+
+.ms-grey-button {
+    color: grey;
+    border-color: grey;
+}
+
 
 #ms-bg-grey {
     background-color: #e5e5e5;

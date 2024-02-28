@@ -13,8 +13,7 @@
 </head>
 <body>
 
-<!-------------- HEADER ---------------->
-
+<!-- HEADER -->
 <header class="">
     <div class="d-flex align-items-center">
         <div class="mx-2" href="#">
@@ -38,8 +37,7 @@
     </div>
 </header>
 
-<!--------------- SIDE-BAR --------------->
-
+<!-- SIDE-BAR -->
 <div class="d-flex">
     <aside class="d-flex flex-column justify-content-between">
         <div class="d-flex flex-column align-items-center">
@@ -62,7 +60,7 @@
         </div>
     </aside>
 
-<!--------------- MAIN --------------->   
+<!-- MAIN -->   
     <main class="w-100 ms-bg-grey">
         <div class="ms-container ms-bg-lightblue text-white">
            
@@ -171,258 +169,274 @@
             </section>          
         </div>
 
-        <!--SECTION TABLE-->
-
+        <!-- SECTION TABLE -->
         <section class="container mt-3 ">
             <div class="row justify-content-evenly">
-            <div class="col-12 col-lg-7 border p-0">
-            <div class="border ms-bg-lightgrey">
-                <h4 class="py-2 ps-1 ">Prossime classi</h4>
+                <div class="col-12 col-lg-7 border rounded p-0">
+
+                    <div class="card" width="100">
+                        <div class="card-header">
+                            <div class="ms-bg-lightgrey">
+                                <h4>Prossime classi</h4>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-nowrap">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <td scope="col" class="w-50">Nome</td>
+                                                <td scope="col" class="d-none d-md-table-cell text-center">Data inizio</td>
+                                                <td scope="col" class="d-none d-md-table-cell text-center">ROI</td>
+                                                <td scope="col" class="text-center">Stato</td>
+                                                <td scope="col" class="text-center">Azioni</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- row 1  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="./img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 75</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 2  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 75</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">16 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 3  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg"  width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 77</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">17 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge bg-warning">Process</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 4  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 78</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">18 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 5  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 79</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">19 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge bg-danger">Failed</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 6  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 80</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">20 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 7  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 81</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">21 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge bg-danger">Failed</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- row 8  -->
+                                            <tr>
+                                                <td scope="row" class="d-flex align-items-center gap-2">
+                                                    <div class="d-inline-block ms-table-logo-xs">
+                                                        <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
+                                                    </div>
+                                                    <span>Classe 82</span>
+                                                </td>
+                                                <td class="d-none d-md-table-cell text-center">22 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell text-center">20%</td>
+                                                <td class="text-center">
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center gap-2">
+                                                        <button type="button" class=" ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        <button type="button" class="ms-bg-white rounded ms-grey-button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SECTION TODO -->
+
+                <div class="col-12 p-0 col-lg-4">
+
+                    <div class="card" width="100">
+                        <div class="card-header">
+                            <h4 class="py-2 ps-1 ">Todo</h4>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+
+                                <label>
+                                    <input type="checkbox" name="kickoff" value="kickoff">
+                                    Kickoff nuove classi
+                                </label>
+
+                            </li>
+                            <li class="list-group-item">
+
+                                <label>
+                                    <input type="checkbox" name="kickoff" value="kickoff">
+                                    Kickoff nuove classi
+                                </label>
+
+                            </li>
+                            <li class="list-group-item">
+
+                                <label>
+                                    <input type="checkbox" name="kickoff" value="kickoff">
+                                    Kickoff nuove classi
+                                </label>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            <div class="table-responsive">
-                <table class="table table-hover table-nowrap">
-                    <thead class="thead-light">
-                        <tr>
-                            <td scope="col" class="w-50">Nome</td>
-                            <td scope="col" class="d-none d-md-table-cell text-center">Data inizio</td>
-                            <td scope="col" class="d-none d-md-table-cell text-center">ROI</td>
-                            <td scope="col" class="text-center">Stato</td>
-                            <td scope="col" class="text-center">Azioni</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- row 1  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="/img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 75</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">15 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge text-bg-success">Done</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 2  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 75</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">16 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge text-bg-success">Done</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 3  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg"  width="40" height="40">
-                                </div>
-                                <span>Classe 77</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">17 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge bg-warning">Process</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 4  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 78</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">18 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge text-bg-success">Done</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 5  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 79</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">19 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge bg-danger">Failed</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 6  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 80</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">20 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge text-bg-success">Done</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 7  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 81</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">21 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge bg-danger">Failed</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- row 8  -->
-                        <tr>
-                            <td scope="row" class="d-flex align-items-center gap-2">
-                                <div class="d-inline-block ms-table-logo-xs">
-                                    <img class="img-fluid" src="img/class-avatar.jpg" width="40" height="40">
-                                </div>
-                                <span>Classe 82</span>
-                            </td>
-                            <td class="d-none d-md-table-cell text-center">22 Feb 2021</td>
-                            <td class="d-none d-md-table-cell text-center">20%</td>
-                            <td class="text-center">
-                                <span class="badge text-bg-success">Done</span>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="button" class=" ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class="ms-bg-white rounded ms-grey-button">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!--SECTION TODO-->
-
-        <div class="col-12 p-0 col-lg-4 border ">
-            <div class="border ms-bg-lightgrey">
-                <h4 class="py-2 ps-1 ">Todo</h4>
-            </div>
-
-            <form class="container">
-                <label class="border rounded w-100 px-2 py-2">
-                    <input type="checkbox" name="kickoff" value="kickoff">
-                    Kickoff nuove classi
-                </label>
-                <br>
-        
-                <label class="border rounded w-100 px-2 py-2">
-                    <input type="checkbox" name="bootstrap" value="bootstrap">
-                    Lezione su Bootstrap 5 in classe #122
-                </label>
-                <br>
-        
-                <label class="border rounded w-100 px-2 px-2 py-2">
-                    <input type="checkbox" name="github" value="github">
-                    Controllare username GitHub studenti
-                </label>
-            </form>
-            
-
-
-
-
-        </div>
-        
         </section>
     </main>
 </div>
+
 
 <!-- Bootstrap Script Js-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

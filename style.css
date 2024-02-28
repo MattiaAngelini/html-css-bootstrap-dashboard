@@ -26,6 +26,6 @@ aside {
 
 @media screen and (min-width: 768px) { 
     aside {
-        min-width: 100px;
+        max-width: 90px;
     }
  }

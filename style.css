@@ -24,8 +24,8 @@ aside {
 
 /* Media Query */
 
-@media screen and (min-width: 576px) { 
-
-
-
+@media screen and (min-width: 768px) { 
+    aside {
+        min-width: 100px;
+    }
  }

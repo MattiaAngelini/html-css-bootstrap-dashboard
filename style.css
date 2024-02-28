@@ -8,6 +8,7 @@ header {
 }
 
 main {
+  
     height:calc(100vh - 5rem);
     overflow-y: auto;
 }
@@ -17,6 +18,7 @@ aside {
     min-width: 4rem;
     background-color: #021e34;
     background-image: url(img/sidebar-bg.png);
+
 }
 
 
@@ -28,6 +30,10 @@ aside {
 
 .ms-bg-lightblue {
     background-color: #1b72e8;
+}
+
+.ms-bg-blue {
+    background-color: #165bba;
 }
 
 #ms-bg-grey {

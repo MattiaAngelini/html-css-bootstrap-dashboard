@@ -3,7 +3,7 @@
 
 main {
     height: calc(100vh - 60px);
-    width: 100%;
+
 }
 
 aside {
@@ -12,10 +12,15 @@ aside {
     background-image: url(img/sidebar-bg.png);
 }
 
+
 /* My colors */
 
 .ms-color-yellow {
     color: #ff8f00;
+}
+
+.ms-bg-lightblue {
+    background-color: #1b72e8;
 }
 
 #ms-bg-grey {

@@ -49,9 +49,14 @@ aside {
     border-color: grey;
 }
 
-
 #ms-bg-grey {
     background-color: #e5e5e5;
+}
+
+/* Hover */
+
+aside .ms-hover:hover {
+    background-color: grey;
 }
 
 /* Media queries */
